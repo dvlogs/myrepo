@@ -1,0 +1,32 @@
+from pyautogui import *
+
+# Mouse Functions:
+moveTo(x, y, duration=0, tween=linear)
+moveRel(xOffset, yOffset, duration=0, tween=linear)
+dragTo(x, y, duration=0, tween=linear)
+dragRel(xOffset, yOffset, duration=0, tween=linear)
+click(x=None, y=None, button='left', clicks=1, interval=0.0, pause=None,  logScreenshot=None,  _pause=True,  _logScreenshot=False)  
+rightClick(x=None, y=None, duration=0.0, logScreenshot=None, _pause=True, _logScreenshot=False)
+middleClick(x=None, y=None, duration=0.0, logScreenshot=None, _pause=True, _logScreenshot=False)
+doubleClick(x=None, y=None, interval=0.0, logScreenshot=None, _pause=True, _logScreenshot=False)
+scroll(clicks, x=None, y=None)
+scroll(clicks, x=None, y=None, scroll_up='scroll up', scroll_down='scroll down')
+
+# Keyboard Functions:
+typewrite(message, interval=0.0, logScreenshot=None, _pause=True, _logScreenshot=False)
+typewrite(message, interval=0.0, logScreenshot=None, _pause=True, _logScreenshot=False, *,  use_clipboard=False, restore_state=True)
+hotkey(*args, interval=0.0, logScreenshot=None, _pause=True, _logScreenshot=False)
+press(keys, presses=1, interval=0.0, logScreenshot=None, _pause=True, _logScreenshot=False)
+release(keys, presses=1, interval=0.0, logScreenshot=None, _pause=True, _logScreenshot=False)
+keyDown(key, logScreenshot=None, _pause=True, _logScreenshot=False)
+keyUp(key, logScreenshot=None, _pause=True, _logScreenshot=False)
+
+# Screen Functions:
+size()
+locateOnScreen(image, grayscale=False, region=None, confidence=0.7, fallback_to_random=False, logScreenshot=None, _pause=True, _logScreenshot=False)
+locateAllOnScreen(image, grayscale=False, region=None, confidence=0.7, logScreenshot=None, _pause=True, _logScreenshot=False)
+locateCenterOnScreen(image, grayscale=False, region=None, confidence=0.7, logScreenshot=None, _pause=True, _logScreenshot=False)
+locateAllCenterOnScreen(image, grayscale=False, region=None, confidence=0.7, logScreenshot=None, _pause=True, _logScreenshot=False)
+screenshot(region=None, filename=None)
+pixel(x, y, color=None)
+pixelMatchesColor(x, y, expectedRGBColor, tolerance=0, logScreenshot=None, _pause=True, _logScreenshot=False)
